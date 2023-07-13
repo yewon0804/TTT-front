@@ -28,7 +28,6 @@ class _ViewDiaryState extends State<ViewDiary> {
       },
     ];
 
-
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
