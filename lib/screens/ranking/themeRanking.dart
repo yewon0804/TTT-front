@@ -73,9 +73,9 @@ class _ThemeRankingState extends State<ThemeRanking> {
                 height: idealHeight * 240,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(widget.image),
+                    image: NetworkImage(widget.image),
                     fit: BoxFit.cover,
-                    colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.4), BlendMode.dstATop),
+                    colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop),
                   )
                 ),
                 child: Container(
@@ -89,7 +89,7 @@ class _ThemeRankingState extends State<ThemeRanking> {
                           widget.theme,
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 48,
+                            fontSize: 26,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -134,7 +134,7 @@ class _ThemeRankingState extends State<ThemeRanking> {
                             Flexible(
                               flex: 1,
                               child: Container(
-                                padding: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
                                 width: double.infinity,
                                 height: double.infinity,
                                 child: FittedBox(
@@ -142,7 +142,7 @@ class _ThemeRankingState extends State<ThemeRanking> {
                                   child: Text(
                                     "${index+1}".padLeft(2, '0'),
                                     style: const TextStyle(
-                                      color: Colors.black12,
+                                      color: Colors.black26,
                                       fontWeight: FontWeight.w100,
                                     ),
                                   ),
